@@ -3,7 +3,7 @@ const hoursdata = document.getElementById('hours');
 const minutesdata = document.getElementById('minutes');
 const secondsdata = document.getElementById('seconds');
 
-const christmas = '25 Dec 2022';
+const christmas = '25 Dec 2022'; 
 
 
 function countdown() {
@@ -24,12 +24,13 @@ function countdown() {
     minutesdata.innerHTML = min
     secondsdata.innerHTML = sec
 
-    // //  console.log(date);
-    // console.log(day, hr, min, sec);
-
 
 }
 
 // console.log(countdown().day());
+
+    // //  console.log(date);
+    // console.log(day, hr, min, sec);
+
 
 setInterval(countdown, 1000)
