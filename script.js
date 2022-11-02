@@ -20,12 +20,19 @@ function countdown() {
 
 
     daysdata.innerHTML = day;
-    hoursdata.innerHTML = hr
-    minutesdata.innerHTML = min
-    secondsdata.innerHTML = sec
+    hoursdata.innerHTML = formatTime(hr)
+    minutesdata.innerHTML = formatTime(min)
+    secondsdata.innerHTML = formatTime(sec)
 
+
+    function formatTime(time) {
+        return time < 10 ? `0${time}` : time;
+
+    }
 
 }
+
+
 
 // console.log(countdown().day());
 

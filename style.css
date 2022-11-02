@@ -12,7 +12,7 @@ body {
 
 .container {
     height: 100vh;
-    min-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +21,9 @@ body {
 
 .time-container {
     display: flex;
-    min-width: 800px;
     justify-content: center;
     align-items: center;
-    max-width: 800px;
+    flex: wrap;
 }
 
 .title {
@@ -57,4 +56,6 @@ body {
 .num {
     font-size: 80px;
     font-weight: 800;
+    color: white;
+    text-shadow: 0 0 1px #000000, 0 0 3px #000000;
 }
