@@ -29,7 +29,7 @@ function countdown() {
 
 // console.log(countdown().day());
 
-// //  console.log(date);
+// //  console.log(date);git
 // console.log(day, hr, min, sec);
 
 
