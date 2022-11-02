@@ -5,6 +5,9 @@ const secondsdata = document.getElementById('seconds');
 
 const christmas = '25 Dec 2022';
 
+let showingAlert = false;
+const xmas = "Christmas";
+const allert = "Is Coming!!";
 
 function countdown() {
 
@@ -27,8 +30,16 @@ function countdown() {
 
     function formatTime(time) {
         return time < 10 ? `0${time}` : time;
-
     }
+
+    const changTilte = setInterval(() => {
+
+        document.title = showingAlert ? xmas : allert;
+        showingAlert = !showingAlert;
+    }, 500);
+
+
+
 
 }
 
