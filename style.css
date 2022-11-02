@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: wrap;
+    flex-wrap: wrap;
 }
 
 .title {
@@ -58,4 +58,24 @@ body {
     font-weight: 800;
     color: white;
     text-shadow: 0 0 1px #000000, 0 0 3px #000000;
+}
+
+@media screen and (max-width:500px) {
+    .card {
+        height: 130px;
+        width: 130px;
+        margin: 0 10px 20px 10px;
+    }
+    .num {
+        font-size: 50px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .card {
+        margin: 0 10px 20px 10px;
+    }
 }
